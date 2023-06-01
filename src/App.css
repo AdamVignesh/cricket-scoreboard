@@ -1,38 +1,43 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  /* justify-content: space-around; */
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.scoreBoard
+{
+  margin-top: 60px;
+  height: 60vh;
+  /* width: 100vh; */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content:space-evenly;
+
+  background-color:rgba(0, 0, 0, 0.934);
+}
+
+.adminControlls
+{
+  display: flex;
+  flex-direction: column;
+  /* width: 250px; */
+  justify-content: space-around;
+}
+
+.score,.overs
+{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color:white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.extras
+{
+  display: flex;
+  align-items: center;
+  background-color: aqua;
+  flex-direction: column  ;
 }
